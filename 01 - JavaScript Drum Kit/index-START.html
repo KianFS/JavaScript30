@@ -61,8 +61,8 @@
         console.log(e.code);
         const audio = document.querySelector(`audio[key=${e.code}]`);
         const key = document.querySelector(`div[key=${e.code}]`);
-        if (!audio) return; //stop rhe function from runnign all together
-        audio.currentTime = 0; //rewidn to start //1x 2x,,,->0 by time we mean number of times we pressed the audio??
+        if (!audio) return; 
+        audio.currentTime = 0; 
 
         audio.play();
         console.log(key);
